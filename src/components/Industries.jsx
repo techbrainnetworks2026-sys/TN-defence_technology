@@ -38,8 +38,8 @@ const Industries = () => {
     <section className="industries-section" id="industries">
       <div className="section-container">
         <div className="section-header reveal">
-          <h2 className="section-title">Industrial <span className="logo-accent">Sectors</span></h2>
-          <p className="section-subtitle">Delivering specialized technology across 24 diverse global industries.</p>
+          <h2 className="section-title">Industrial <span className="logo-accent">Sectors 🏭</span></h2>
+          <p className="section-subtitle">Delivering specialized technology across 24 diverse global industries. 🌐</p>
         </div>
         
         <div className="industries-grid">
@@ -48,7 +48,7 @@ const Industries = () => {
             return (
               <div key={item.name} className="industry-card glass-card reveal" style={{ transitionDelay: `${index * 0.05}s` }}>
                 <div className="industry-icon-wrapper">
-                  <IconComponent className="industry-icon" size={32} />
+                  <IconComponent className="industry-icon" size={18} />
                 </div>
                 <div className="industry-content">
                   <h3 className="industry-name">{item.name}</h3>

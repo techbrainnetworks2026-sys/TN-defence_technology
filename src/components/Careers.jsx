@@ -2,14 +2,14 @@ import React from 'react';
 import './Careers.css';
 
 const jobs = [
-  { title: "Android Developer", skill: "Java, Kotlin", location: "Remote / Hybrid" },
-  { title: "CAD/CAM Designer", skill: "Solidworks", location: "India" },
-  { title: "DFT Engineer", skill: "DFT Methodologies, ATPG, JTAG", location: "UK" },
-  { title: "FARM-stack Developer", skill: "FastAPI, ReactJs, MongoDB", location: "Remote" },
-  { title: "FPGA Designer", skill: "VHDL, modelsim, xilinx vivado", location: "India" },
-  { title: "Hardware Design & Testing", skill: "C, Embedded C, RTOS, Kicad", location: "India" },
-  { title: "IOS Developer", skill: "Swift", location: "Remote" },
-  { title: "Machine Learning Engineer", skill: "Python, Keras, Opencv, Scikit, Tensorflow", location: "Remote" }
+  { title: "Android Developer", skill: "Java, Kotlin"},
+  { title: "CAD/CAM Designer", skill: "Solidworks"},
+  { title: "DFT Engineer", skill: "DFT Methodologies, ATPG, JTAG"},
+  { title: "FARM-stack Developer", skill: "FastAPI, ReactJs, MongoDB"},
+  { title: "FPGA Designer", skill: "VHDL, modelsim, xilinx vivado"},
+  { title: "Hardware Design & Testing", skill: "C, Embedded C, RTOS, Kicad"},
+  { title: "IOS Developer", skill: "Swift"},
+  { title: "Machine Learning Engineer", skill: "Python, Keras, Opencv, Scikit, Tensorflow" }
 ];
 
 const Careers = () => {

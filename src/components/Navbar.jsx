@@ -21,32 +21,12 @@ const Navbar = () => {
         </div>
 
         <ul className="navbar-links">
-          <li><a href="#home">Home</a></li>
-          <li className="dropdown-parent">
-            <a href="#industries" className="dropdown-toggle">Industries</a>
-            <div className="industries-dropdown">
-              <div className="dropdown-grid">
-                {[
-                  "Aerospace", "Agriculture", "Automotive", "Chemical", 
-                  "Defence Technology", "Education", "Energy & Utilities", 
-                  "Entertainment and Media", "Finance", "Food Technology", 
-                  "Healthcare", "Infrastructure", "Logistics", "Manufacturing", 
-                  "Ocean Technology", "Oil and Gas", "Pharmaceutical", "Retail", 
-                  "Sports", "Technology", "Telecommunication", "Textile", 
-                  "Transportation", "Travel"
-                ].map((industry) => (
-                  <a key={industry} href={`#${industry.toLowerCase().replace(/ /g, '-')}`} className="dropdown-item">
-                    {industry}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#careers">Careers</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
-          <li><a href="#contact" className="nav-cta">Get in Touch</a></li>
+          <li><a href="#home">🏠 Home</a></li>
+          <li><a href="#about">ℹ️ About</a></li>
+          <li><a href="#industries">🏭 Industries</a></li>
+          <li><a href="#products">⚙️ Products</a></li>
+          <li><a href="#careers">💼 Careers</a></li>
+          <li><a href="#contact">� Contact us</a></li>
         </ul>
       </div>
     </nav>

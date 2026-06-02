@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { products } from '../data/products';
 import './Products.css';
 
@@ -7,9 +8,9 @@ const Products = () => {
     <section id="products" className="products-professional">
       <div className="section-container">
         <div className="section-header reveal">
-          <h2 className="section-title">Our<span className="logo-accent">Products</span></h2>
+          <h2 className="section-title">Our <span className="logo-accent">Products 🛠️</span></h2>
           <p className="section-desc">
-            Advanced systems engineered for precision, reliability, and mission success 
+            Advanced systems engineered for precision 🎯, reliability 🛡️, and mission success 🚀
             across all defense domains.
           </p>
         </div>
@@ -25,7 +26,7 @@ const Products = () => {
                 <h3 className="product-name-professional">{product.name}</h3>
                 <p className="product-desc-professional">{product.description}</p>
                 <div className="card-footer-professional">
-                  <button className="btn-text">Specifications →</button>
+                  <Link to={`/product/${product.id}`} className="btn-text">Learn more  →</Link>
                   <div className="product-id-tag">ID: {String(product.id).padStart(3, '0')}</div>
                 </div>
               </div>

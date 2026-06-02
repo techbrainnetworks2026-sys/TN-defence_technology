@@ -17,31 +17,31 @@ const About = () => {
           </div>
           
           <div className="about-content-side reveal">
-            <span className="section-badge">ABOUT TECHBRAIN</span>
-            <h2 className="section-title">Redefining <br />Autonomous <span className="logo-accent">Defence</span></h2>
+            <span className="section-badge">🏢 ABOUT TECHBRAIN</span>
+            <h2 className="section-title">Redefining <br />Autonomous <span className="logo-accent">Defence 🦅</span></h2>
             <p className="about-lead">
               At Techbrain Networks, we engineer the digital backbone of modern security operations. 
               Our focus is on delivering mission-critical infrastructure that excels in the most 
-              challenging environments.
+              challenging environments. 🌍
             </p>
             
             <div className="vmp-professional-grid">
               <div className="vmp-item">
-                <div className="vmp-icon">V</div>
+                <div className="vmp-icon">👁️</div>
                 <div className="vmp-text">
                   <h3>Our Vision</h3>
                   <p>A globally secure landscape enabled by intelligent, human-centric technology.</p>
                 </div>
               </div>
               <div className="vmp-item">
-                <div className="vmp-icon">M</div>
+                <div className="vmp-icon">🎯</div>
                 <div className="vmp-text">
                   <h3>Our Mission</h3>
                   <p>To provide defense forces with the most reliable and advanced tactical software tools.</p>
                 </div>
               </div>
               <div className="vmp-item">
-                <div className="vmp-icon">P</div>
+                <div className="vmp-icon">🔥</div>
                 <div className="vmp-text">
                   <h3>Our Passion</h3>
                   <p>Engineering excellence that empowers security forces with next-generation tactical superiority.</p>

@@ -9,11 +9,11 @@ const Contact = () => {
           <div className="contact-info-side reveal">
             <h2 className="section-title">Strategic <br /> <span className="logo-accent">Inquiries</span></h2>
             <p className="contact-desc-professional">
-              Partner with Techbrain Networks for industry-leading defense 
-              infrastructure solutions. Our team is available for technical 
+              Partner with Techbrain Networks for industry-leading defense
+              infrastructure solutions. Our team is available for technical
               consultations and mission-critical support.
             </p>
-            
+
             <div className="contact-details-list">
               <div className="detail-item">
                 <div className="detail-icon">✉</div>
@@ -34,11 +34,12 @@ const Contact = () => {
             <div className="office-locations-grid">
               <div className="location-card glass-card">
                 <h4 className="location-name">India Headquarters</h4>
-                <p>6/12 Parameswaran Street, <br />Tamil Nadu, India</p>
+                <p>6/12 Papa vaikal Street, Ayyampettai Post, Papanasam Taluk,Thanjavur 614201, Tamilnadu, India.</p>
               </div>
               <div className="location-card glass-card">
                 <h4 className="location-name">United Kingdom Office</h4>
-                <p>WC2H 9JQ, London, <br />United Kingdom</p>
+                <p>71-75 Shelton Street, Covent Garden,
+                    London, WC2H 9JQ, United Kingdom.</p>
               </div>
             </div>
           </div>
