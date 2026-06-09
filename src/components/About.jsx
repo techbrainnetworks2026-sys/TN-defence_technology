@@ -8,7 +8,7 @@ const About = () => {
         <div className="about-grid">
           <div className="about-image-side reveal">
             <div className="main-about-img">
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000" alt="Defence Technology R&D" />
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000" alt="Defence Technology R&D" loading="lazy" />
             </div>
             <div className="about-stat-overlay glass-card">
               <div className="stat-num">24+</div>

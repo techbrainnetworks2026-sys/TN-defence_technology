@@ -50,11 +50,11 @@ const Contact = () => {
               <div className="form-flex">
                 <div className="form-group">
                   <label>Full Name</label>
-                  <input type="text" placeholder="John Doe" />
+                  <input type="text" placeholder="Enter Your Name" />
                 </div>
                 <div className="form-group">
                   <label>Email Address</label>
-                  <input type="email" placeholder="john@company.com" />
+                  <input type="email" placeholder="Enter Your Email" />
                 </div>
               </div>
               <div className="form-group">

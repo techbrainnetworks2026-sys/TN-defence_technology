@@ -19,7 +19,7 @@ const Products = () => {
           {products.map((product) => (
             <div key={product.id} className="product-card-professional glass-card reveal">
               <div className="card-image-wrapper">
-                <img src={product.image} alt={product.name} />
+                <img src={product.image} alt={product.name} loading="lazy" />
                 <div className="product-category-badge">{product.category}</div>
               </div>
               <div className="card-body-professional">

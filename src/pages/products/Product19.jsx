@@ -19,7 +19,7 @@ const Product19 = () => {
       </div>
       
       <div className="product-banner">
-        <img src="https://images.unsplash.com/photo-1550985543-f47f38aeee65?auto=format&fit=crop&q=80&w=800" alt="Subsurface Threat Prediction Platforms" />
+        <img src="/images/product19.png" alt="Subsurface Threat Prediction Platforms" />
       </div>
 
       <div className="product-content-sections">

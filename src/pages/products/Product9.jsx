@@ -15,7 +15,7 @@ const Product9 = () => {
         </div>
       </div>
       <div className="product-banner">
-        <img src="https://images.unsplash.com/photo-1626767066759-dd3197f6cc1a?auto=format&fit=crop&q=80&w=800" alt="Battlefield Simulation" />
+        <img src="../public/images/product9.jpg?auto=format&fit=crop&q=80&w=800" alt="Battlefield Simulation" />
       </div>
       <div className="product-content-sections">
         <section className="detail-section">

@@ -15,7 +15,7 @@ const Product5 = () => {
         </div>
       </div>
       <div className="product-banner">
-        <img src="https://images.unsplash.com/photo-1580136608260-42d1c4bc70bc?auto=format&fit=crop&q=80&w=800" alt="Geospatial Intelligence" />
+        <img src="/images/product5.png" alt="Geospatial Intelligence Analysis Tools" />
       </div>
       <div className="product-content-sections">
         <section className="detail-section">

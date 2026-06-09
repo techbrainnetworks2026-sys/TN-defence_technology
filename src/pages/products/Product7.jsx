@@ -15,7 +15,7 @@ const Product7 = () => {
         </div>
       </div>
       <div className="product-banner">
-        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=800" alt="Tactical Communication Encryption" />
+        <img src="/images/product7.png" alt="Tactical Communication Encryption" />
       </div>
       <div className="product-content-sections">
         <section className="detail-section">

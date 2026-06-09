@@ -3,6 +3,7 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,6 +13,8 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
@@ -20,13 +23,17 @@ const Navbar = () => {
           <span className="logo-accent">DEFENCE TECHNOLOGY</span>
         </div>
 
-        <ul className="navbar-links">
-          <li><a href="#home">🏠 Home</a></li>
-          <li><a href="#about">ℹ️ About</a></li>
-          <li><a href="#industries">🏭 Industries</a></li>
-          <li><a href="#products">⚙️ Products</a></li>
-          <li><a href="#careers">💼 Careers</a></li>
-          <li><a href="#contact">� Contact us</a></li>
+        <button className="navbar-toggle" onClick={toggleMenu} aria-label="Toggle navigation">
+          ☰
+        </button>
+
+        <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
+          <li><a href="#home" onClick={() => setMenuOpen(false)}>🏠 Home</a></li>
+          <li><a href="#about" onClick={() => setMenuOpen(false)}>ℹ️ About</a></li>
+          <li><a href="#industries" onClick={() => setMenuOpen(false)}>🏭 Industries</a></li>
+          <li><a href="#products" onClick={() => setMenuOpen(false)}>⚙️ Products</a></li>
+          <li><a href="#careers" onClick={() => setMenuOpen(false)}>💼 Careers</a></li>
+          <li><a href="#contact" onClick={() => setMenuOpen(false)}>✉️ Contact us</a></li>
         </ul>
       </div>
     </nav>

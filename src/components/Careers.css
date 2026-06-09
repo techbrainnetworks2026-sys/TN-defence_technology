@@ -12,13 +12,16 @@
 .career-item-professional {
   padding: 30px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
   transition: var(--transition-smooth);
 }
 
 .career-item-professional:hover {
-  transform: translateX(10px);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .job-title-professional {
@@ -35,7 +38,9 @@
 .career-meta-info {
   display: flex;
   align-items: center;
-  gap: 40px;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
 }
 
 .job-location {
@@ -51,6 +56,8 @@
   padding: 8px 24px;
   border-radius: 4px;
   font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
 }
 
 .btn-outline-small:hover {
@@ -64,7 +71,8 @@
   color: var(--text-muted);
 }
 
-@media (max-width: 768px) {
-  .career-item-professional { flex-direction: column; align-items: flex-start; gap: 20px; }
-  .career-meta-info { width: 100%; justify-content: space-between; gap: 0; }
+@media (max-width: 600px) {
+  .careers-list-professional {
+    grid-template-columns: 1fr;
+  }
 }

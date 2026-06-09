@@ -31,7 +31,7 @@ export const products = [
     id: 5,
     name: "Geospatial Intelligence Analysis Tools",
     description: "Advanced mapping and terrain-based intelligence insights for strategic battlefield planning.",
-    image: "https://images.unsplash.com/photo-1580136608260-42d1c4bc70bc?auto=format&fit=crop&q=80&w=800",
+    image: '../public/images/product5.png',
     category: "Space"
   },
   {
@@ -45,7 +45,7 @@ export const products = [
     id: 7,
     name: "Tactical Communication Encryption Software",
     description: "Military-grade, quantum-resistant encryption for secure mission-critical voice and data communication.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=800",
+    image: '../public/images/product7.png',
     category: "Communication"
   },
   {
@@ -59,7 +59,7 @@ export const products = [
     id: 9,
     name: "Battlefield Simulation and Training Software",
     description: "Ultra-realistic combat simulations and digital twin environments for advanced troop training.",
-    image: "https://images.unsplash.com/photo-1626767066759-dd3197f6cc1a?auto=format&fit=crop&q=80&w=800",
+    image: '../public/images/product9.jpg?auto=format&fit=crop&q=80&w=800',
     category: "Software"
   },
   {
@@ -129,7 +129,7 @@ export const products = [
     id: 19,
     name: "Subsurface Threat Prediction Platforms",
     description: "Advanced acoustic signatures analysis and predictive patterns for underwater threat detection.",
-    image: "https://images.unsplash.com/photo-1550985543-f47f38aeee65?auto=format&fit=crop&q=80&w=800",
+    image: '../public/images/product19.png',
     category: "Sea"
   },
   {
