@@ -28,12 +28,12 @@ const Navbar = () => {
         </button>
 
         <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
-          <li><a href="#home" onClick={() => setMenuOpen(false)}>🏠 Home</a></li>
-          <li><a href="#about" onClick={() => setMenuOpen(false)}>ℹ️ About</a></li>
-          <li><a href="#industries" onClick={() => setMenuOpen(false)}>🏭 Industries</a></li>
-          <li><a href="#products" onClick={() => setMenuOpen(false)}>⚙️ Products</a></li>
-          <li><a href="#careers" onClick={() => setMenuOpen(false)}>💼 Careers</a></li>
-          <li><a href="#contact" onClick={() => setMenuOpen(false)}>✉️ Contact us</a></li>
+          <li><a href="/#home" onClick={() => setMenuOpen(false)}>🏠 Home</a></li>
+          <li><a href="/#about" onClick={() => setMenuOpen(false)}>ℹ️ About</a></li>
+          <li><a href="/#industries" onClick={() => setMenuOpen(false)}>🏭 Industries</a></li>
+          <li><a href="/#products" onClick={() => setMenuOpen(false)}>⚙️ Products</a></li>
+          <li><a href="/#careers" onClick={() => setMenuOpen(false)}>💼 Careers</a></li>
+          <li><a href="/#contact" onClick={() => setMenuOpen(false)}>✉️ Contact us</a></li>
         </ul>
       </div>
     </nav>

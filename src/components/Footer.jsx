@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="footer-logo">
-              <span className="logo-text">TECHBRAIN</span>
+              <span className="logo-text">TECHBRAIN NETWORKS</span>
               <span className="logo-accent">DEFENCE TECHNOLOGY</span>
             </div>
             <p className="footer-bio">
@@ -57,13 +57,6 @@ const Footer = () => {
               <a href="#about">About Excellence</a>
               <a href="#careers">Global Careers</a>
               <a href="#contact">Contact Hub</a>
-            </div>
-            <div className="link-col">
-              <h4>Compliance</h4>
-              <button onClick={() => setActiveModal('privacy')} className="footer-btn-link">Privacy Policy</button>
-              <button onClick={() => setActiveModal('terms')} className="footer-btn-link">Terms & Conditions</button>
-              <a href="#">Export Control</a>
-              <a href="#">Ethical AI</a>
             </div>
           </div>
         </div>

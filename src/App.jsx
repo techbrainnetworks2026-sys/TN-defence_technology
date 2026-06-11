@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -32,10 +32,12 @@ import Product18 from './pages/products/Product18';
 import Product19 from './pages/products/Product19';
 import Product20 from './pages/products/Product20';
 
-function App() {
+function AppRoutes() {
+  const location = useLocation();
+
   useEffect(() => {
-    const reveals = document.querySelectorAll('.reveal');
     const revealOnScroll = () => {
+      const reveals = document.querySelectorAll('.reveal');
       for (let i = 0; i < reveals.length; i++) {
         const windowHeight = window.innerHeight;
         const revealTop = reveals[i].getBoundingClientRect().top;
@@ -51,45 +53,51 @@ function App() {
     return () => {
       window.removeEventListener('scroll', revealOnScroll);
     };
-  }, []);
+  }, [location]);
 
   return (
+    <Routes>
+      <Route path='/' element={
+        <div className="app-professional">
+          <Navbar />
+          <Hero />
+          <About />
+          <Services />
+          <Industries />
+          <Products />
+          <Careers />
+          <Contact />
+          <Footer />
+        </div>
+      } />
+      <Route path='/product/1' element={<Product1 />} />
+      <Route path='/product/2' element={<Product2 />} />
+      <Route path='/product/3' element={<Product3 />} />
+      <Route path='/product/4' element={<Product4 />} />
+      <Route path='/product/5' element={<Product5 />} />
+      <Route path='/product/6' element={<Product6 />} />
+      <Route path='/product/7' element={<Product7 />} />
+      <Route path='/product/8' element={<Product8 />} />
+      <Route path='/product/9' element={<Product9 />} />
+      <Route path='/product/10' element={<Product10 />} />
+      <Route path='/product/11' element={<Product11 />} />
+      <Route path='/product/12' element={<Product12 />} />
+      <Route path='/product/13' element={<Product13 />} />
+      <Route path='/product/14' element={<Product14 />} />
+      <Route path='/product/15' element={<Product15 />} />
+      <Route path='/product/16' element={<Product16 />} />
+      <Route path='/product/17' element={<Product17 />} />
+      <Route path='/product/18' element={<Product18 />} />
+      <Route path='/product/19' element={<Product19 />} />
+      <Route path='/product/20' element={<Product20 />} />
+    </Routes>
+  );
+}
+
+function App() {
+  return (
     <Router>
-      <Routes>
-        <Route path='/' element={
-          <div className="app-professional">
-            <Navbar />
-            <Hero />
-            <About />
-            <Services />
-            <Industries />
-            <Products />
-            <Careers />
-            <Contact />
-            <Footer />
-          </div>
-        } />
-        <Route path='/product/1' element={<Product1 />} />
-        <Route path='/product/2' element={<Product2 />} />
-        <Route path='/product/3' element={<Product3 />} />
-        <Route path='/product/4' element={<Product4 />} />
-        <Route path='/product/5' element={<Product5 />} />
-        <Route path='/product/6' element={<Product6 />} />
-        <Route path='/product/7' element={<Product7 />} />
-        <Route path='/product/8' element={<Product8 />} />
-        <Route path='/product/9' element={<Product9 />} />
-        <Route path='/product/10' element={<Product10 />} />
-        <Route path='/product/11' element={<Product11 />} />
-        <Route path='/product/12' element={<Product12 />} />
-        <Route path='/product/13' element={<Product13 />} />
-        <Route path='/product/14' element={<Product14 />} />
-        <Route path='/product/15' element={<Product15 />} />
-        <Route path='/product/16' element={<Product16 />} />
-        <Route path='/product/17' element={<Product17 />} />
-        <Route path='/product/18' element={<Product18 />} />
-        <Route path='/product/19' element={<Product19 />} />
-        <Route path='/product/20' element={<Product20 />} />
-      </Routes>
+      <AppRoutes />
     </Router>
   );
 }

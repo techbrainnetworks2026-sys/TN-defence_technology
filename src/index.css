@@ -71,7 +71,7 @@ button {
 .section-container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 100px 20px;
+  padding: 20px 20px;
 }
 
 /* PREMIUM UTILITIES */

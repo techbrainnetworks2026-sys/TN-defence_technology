@@ -33,7 +33,7 @@ const Careers = () => {
               </div>
               <div className="career-meta-info">
                 <span className="job-location">{job.location}</span>
-                <button className="btn-outline-small">Apply Now</button>
+                {/* <button className="btn-outline-small">Apply Now</button> */}
               </div>
             </div>
           ))}
